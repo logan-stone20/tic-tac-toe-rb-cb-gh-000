@@ -123,5 +123,5 @@ def play(board)
   while !over?(board)
     turn(board)
   end
-  puts "Congrats #{winner(board)}"
+  puts "Congratulations #{winner(board)}"
 end
