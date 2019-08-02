@@ -43,7 +43,7 @@ def valid_move?(board, index)
   end
 end
 
-def turn(board, index)
+def turn(board)
   puts "Please enter 1-9:"
   number = gets.strip
   number = input_to_index(number)
