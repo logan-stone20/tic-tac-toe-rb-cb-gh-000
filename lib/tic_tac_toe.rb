@@ -48,14 +48,14 @@ def turn(board)
   number = gets.strip
   number = input_to_index(number)
   if valid_move?(board, number)
-    move(board, number, player)
+    move(board, number)
   else
     while !valid_move?(board, number) do
       puts "Please enter 1-9:"
       number = gets.strip
       number = input_to_index(number)
     end
-    move(board, number, player)
+    move(board, number)
   end
   display_board(board)
 end
