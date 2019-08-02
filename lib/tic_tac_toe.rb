@@ -55,6 +55,7 @@ def turn(board, index)
       number = gets.strip
       number = input_to_index(number)
     end
+    move(board, number, player)
   end
   display_board(board)
 end
