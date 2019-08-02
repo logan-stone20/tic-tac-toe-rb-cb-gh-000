@@ -21,3 +21,7 @@ def input_to_index(input)
   puts input.to_i.class
   return input.to_i - 1
 end
+
+def move(board, index, character)
+  board[index] = character
+end
