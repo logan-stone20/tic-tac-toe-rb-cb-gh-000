@@ -90,3 +90,31 @@ def won?(board)
   end
   return false
 end
+
+def full?(board)
+  board.all? { |e| e == "X" || e == "O"  }
+end
+
+def draw?(board)
+  if !won?(board) && full?(board)
+    true
+  end
+end
+
+def over?(board)
+  if won?(board) || draw?(board) || full?(board)
+    true
+  end
+end
+
+def winner(board)
+  if comb = won?(board)
+    if comb.all? { |e| board[e] == "X" }
+      return "X"
+    elsif comb.all? { |e| board[e] == "O" }
+      return "O"
+    end
+  else
+    return nil
+  end
+end
