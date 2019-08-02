@@ -118,3 +118,10 @@ def winner(board)
     return nil
   end
 end
+
+def play(board)
+  while !over?(board)
+    puts "Enter from 1 to 9:"
+    input = gets.strip
+  end
+end 
